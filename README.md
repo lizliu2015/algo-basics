@@ -1,6 +1,9 @@
 # algo-basics
 
-1. Quick Sort
+2. Merge Sort
+(归并排序) O(nlog(n)
+
+自底向上的方法，先划分为两个子区间，然后分别对两个子区间排序，再将排序好的子区间进行合并。
 
 ```python
 def quicksort(nums, start, end):
