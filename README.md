@@ -18,3 +18,7 @@ def quicksort(nums, start, end):
             right -=1
     quicksort(nums, start, right)
     quicksort(nums, left, end)
+    
+follow up :
+kth largest number (quick select)
+find median sort arrays( based on kth, 2 pointers, divide and conquer )
