@@ -182,5 +182,5 @@ if __name__ == "__main__":
         b[i] += b[i-1]
     for i in range(1, n+1):
         print(b[i], end=" ")
-```python
+```
 
