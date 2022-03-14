@@ -195,3 +195,74 @@ if __name__ == "__main__":
 ```
 follow up: leetcode 1094 https://leetcode.com/problems/car-pooling/
 
+
+差分矩阵
+
+差分矩阵实质上就是二维上的差分：
+
+问题：
+
+输入一个n行m列的整数矩阵，再输入q个操作，每个操作包含五个整数x1, y1, x2, y2, c，其中(x1, y1)和(x2, y2)表示一个子矩阵的左上角坐标和右下角坐标。每个操作都要将选中的子矩阵中的每个元素的值加上c。请你将进行完所有操作后的矩阵输出。
+
+输入样例：
+```
+3 4 3  # n, m, q
+1 2 2 1
+3 2 2 1
+1 1 1 1
+1 1 2 2 1  # q 个操作
+1 3 2 3 2
+3 1 3 4 1
+```
+输出样例：
+```
+2 3 4 1
+4 3 4 1
+2 2 2 2
+```
+问题求解
+
+直接借鉴一维差分和二维矩阵前缀和的思想，对于要在某个区间增加一个值 c ，我们需要对差分矩阵 b[n+1][m+1] 进行如下操作：
+```
+b[x1][y1] += c
+b[x2+1][y1] -= c
+b[x1][y2+1] -= c
+b[x2+1][y2+1] += c
+```
+核心代码：
+
+```python
+def insert(b, x1, y1, x2, y2, c):
+    b[x1][y1] += c
+    b[x2+1][y1] -= c
+    b[x1][y2+1] -= c
+    b[x2+1][y2+1] += c
+
+if __name__ == "__main__":
+    n, m, q = map(int, input().split())
+    N = 1010  # 省去边界条件的考虑
+    a = [[0] * (N) for i in range(N)]
+    b = [[0] * (N) for i in range(N)]
+    for i in range(1, n+1):
+        nums = map(int, input().split())
+        for j, val  in enumerate(nums):
+            a[i][j+1] = val
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            insert(b, i, j, i, j, a[i][j])
+    # q 次操作
+    while q > 0:
+        q -= 1
+        x1, y1, x2, y2, c = map(int, input().split())
+        insert(b, x1, y1, x2, y2, c)
+    # 求前缀和
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            b[i][j] = b[i-1][j] + b[i][j-1] - b[i-1][j-1] + b[i][j]
+    # 输出
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            print(b[i][j], end=" ")
+        print()
+       ```
+
