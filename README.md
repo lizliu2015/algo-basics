@@ -242,7 +242,7 @@ def insert(b, x1, y1, x2, y2, c):
 
 if __name__ == "__main__":
     n, m, q = map(int, input().split())
-    N = 1010  # 省去边界条件的考虑
+    N = 1010  # 创建更大的矩阵，省去边界条件的考虑
     a = [[0] * (N) for i in range(N)]
     b = [[0] * (N) for i in range(N)]
     for i in range(1, n+1):
