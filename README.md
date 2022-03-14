@@ -149,6 +149,14 @@ for i in range(q):
 
 ```3 4 5 3 4 2```
 
+数据范围
+```
+1≤n,m≤100000,
+1≤l≤r≤n,
+−1000≤c≤1000,
+−1000≤整数序列中元素的值≤1000
+```
+
 问题求解
 
 该题最直观的思想是针对每次操作遍历一次数组，然后在相应的位置增加 c ，该方法的时间复杂度为 O(mn)
@@ -157,15 +165,15 @@ for i in range(q):
 
 对于一个数组 b[n+1] ：
 
-([x, x, x, l, x, x, r, r+1, x, n])
+```([x, x, x, l, x, x, r, r+1, x, n])```
 
 如果在 b[l] 位置加上 c ，则从 b[l] 开始的所有前缀和数组都会加上 c ；同理，为了保证只在 [l,r] 的区间增加 c ，我们需要将 b[r+1]-=c 。最终我们只需要根据得到的数组 b 求前缀和即可。采样该方法对于每次的区间操作只需要 O(1) 的时间复杂度，而构造差分矩阵的时间复杂度为 O(n) ，因此总共的时间复杂度为 O(n) 。
 
 核心代码：
 ```python 
 def insert(b, l, r, c):
-    b[l] += c
-    b[r+1] -= c
+    b[l] += c # add c to all int after l
+    b[r+1] -= c #minus c to all int after r+1
 
 if __name__ == "__main__":
     n, m = map(int, input().split())
@@ -173,7 +181,7 @@ if __name__ == "__main__":
     b = [0] * (n + 10)  # 差分数组
     nums = list(map(int, input().split()))
     for index, val in enumerate(nums):
-        a[index+1] = val
+        a[index+1] = val 
     for i in range(1, n+1):  # 强烈建议都从 1 开始
         insert(b, i, i, a[i])
     while m > 0:
