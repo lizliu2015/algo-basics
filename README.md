@@ -265,4 +265,7 @@ if __name__ == "__main__":
             print(b[i][j], end=" ")
         print()
        ```
+follow up 
+leetcode 1109: https://leetcode-cn.com/problems/corporate-flight-bookings/
+leetcode 2132: https://leetcode-cn.com/problems/stamping-the-grid/
 
