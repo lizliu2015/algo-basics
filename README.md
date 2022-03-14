@@ -196,7 +196,7 @@ if __name__ == "__main__":
 follow up: leetcode 1094 https://leetcode.com/problems/car-pooling/
 
 
-差分矩阵
+### 差分矩阵
 
 差分矩阵实质上就是二维上的差分：
 
