@@ -281,7 +281,8 @@ a=list(map(int,input().split()))
 s=[0]*(n+1) # s[] 存储当前序列中每个字符出现的次数
 
 res=0 # 结果
-```
+
+```python
 for i in range(n):
     s[a[i]]+=1          # 当前字符出现的次数+1
     while s[a[i]]>1:    # 如果当前字符出现次数>1,表示有重复，需要进行处理
