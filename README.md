@@ -124,6 +124,7 @@ for i in range(q):
         print(-1, -1)
 ```
 备注: 二分练习题：leetcode_704_二分查找
+https://leetcode.com/problems/random-pick-with-weight/
 
 
 
