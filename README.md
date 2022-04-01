@@ -361,7 +361,6 @@ idx: store which node has been used
 - pop 拿出顶端元素
 - peek - 查看最顶端元素
 - isEmpty - 查看stack是不是空的
-<img width="614" alt="image" src="https://user-images.githubusercontent.com/13955626/161240698-1ad5c59d-568e-405e-93b3-1ab75ad04be6.png">
 
 ### Queue支持的操作
 - enqueue 加入元素
