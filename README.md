@@ -305,4 +305,6 @@ practice:
 1. LC344:https://leetcode.com/problems/reverse-string/
 2. LC680:https://leetcode.com/problems/valid-palindrome-ii/
 
+# Data Structure
+## 1. Linked List
 
