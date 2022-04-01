@@ -1,10 +1,10 @@
 # Table of Contents
 1. [Sorting](#Sorting)
-2. [Binary Search](# Binary Search)
+2. [Binary Search](#BinarySearch)
 3. [Presum](#Presum)
 4. [Two Pointers](#Two Pointers)
 
-## Sorting
+## Sorting <a name="Sorting"></a>
 ### 1.1 Quick Sort
 ```python
 def quicksort(nums, start, end):
@@ -66,7 +66,7 @@ def merge_sort(list1):
         j += 1
 ```
 
-## Binary Search
+## Binary Search <a name="BinarySearch"></a>
 综合使用课上所讲的两种二分模板；
 1. 找左边的最后一个：
 定义性质: 左边元素满足<=target , 结果是查找范围的右边界;
