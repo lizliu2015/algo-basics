@@ -369,3 +369,99 @@ idx: store which node has been used
 - isFull
 - isEmpty
 
+习题：
+1. LC20 https://leetcode.com/problems/valid-parentheses/
+
+### 单调栈
+1.1 什么是单调栈
+
+1.2 如何维护一个单调栈
+
+单调递增栈：在保持栈内元素单调递增的前提下（如果栈顶元素大于要入栈的元素，将将其弹出），将新元素入栈。
+
+单调递减栈：在保持栈内元素单调递减的前提下（如果栈顶元素小于要入栈的元素，则将其弹出），将新元素入栈。
+1.3 单调栈有什么规律
+
+单调栈的时间复杂度是O(n)
+
+<img width="634" alt="image" src="https://user-images.githubusercontent.com/13955626/161318240-cd941855-16bf-4ced-8954-2e7b91b6c959.png">
+
+对于将要入栈的元素来说，在对栈进行更新后（即弹出了所有比自己大的元素），此时栈顶元素就是数组中左侧第一个比自己小的元素；
+
+<img width="633" alt="image" src="https://user-images.githubusercontent.com/13955626/161318281-8ef0092d-2701-447e-8df4-98e568a561af.png">
+
+对于将要入栈的元素来说，在对栈进行更新后（即弹出了所有比自己小的元素），此时栈顶元素就是数组中左侧第一个比自己大的元素；
+1.4 什么时候使用单调栈
+
+给定一个序列，求序列中的每一个数左边或右边第一个比他大或比他小的数在什么地方；
+2. 代码实现
+
+`python
+# 读取数组
+n = int(input())
+nums = list(map(int, input().split()))
+
+# 单调栈
+deq = []
+
+# 开始处理数据
+for i in range(len(nums)):
+
+    # 从单调栈中弹出不满足升序的数
+    while deq and deq[-1] >= nums[i]:
+        deq.pop()
+
+    # 此时要么栈空(没有最小),否则栈顶元素就是最近的最小元素
+    if len(deq) != 0:
+        print(deq[-1], end = " ") 
+    else:
+        print(-1, end = " ")
+
+    # 将当前数据加入单调栈中(当前数据一定能够保证单调栈升序)
+    deq.append(nums[i])
+` 
+3. 相关练习题
+
+单调栈：leetcode_42_接雨水 (注: 在很多资料中都会把这个题列为单调栈的题目, 但是我觉得用其他的方法会更清晰一些)
+
+单调栈：leetcode_84_柱状图中最大的矩形
+
+单调栈：leetcode_496_下一个更大元素I
+
+单调栈：leetcode_503_下一个更大元素II
+
+单调栈：leetcode_739_每日温度
+
+### 滑动窗口
+什么是滑动窗口
+在示例中，我们从数组中第一个元素开始遍历，由于窗口的大小是3，因此当遍历到第三个元素时，窗口就形成了。之后，继续遍历元素时，为了保持窗口的大小为3，左侧元素就需要从窗口中剔除。这样使得窗口一直在向右移动，直到考察到最后一个元素结束，这就是所谓的滑动窗口。
+<img width="490" alt="image" src="https://user-images.githubusercontent.com/13955626/161319326-63cda7a4-d321-4e6b-bfbd-76abe7c95107.png">
+
+## Trie
+用来高效地存储（Insert）和查找（Search）字符串的一种集合的数据结构
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/13955626/161321517-9c6a3e33-5acb-418d-a0c2-270520439d24.png">
+
+## Backtrack
+一种DFS的形式
+
+
+## 并查集 Union Find
+
+
+
+
+
+## 堆 Heap
+
+## Hashmap
+
+
+
+# 搜索与图论
+## 深度优先搜索 DFS
+
+
+
+## 宽度优先搜索 BFS
+
+
