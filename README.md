@@ -353,3 +353,20 @@ idx: store which node has been used
 练习题： 
 1. LC206 https://leetcode.com/problems/reverse-linked-list/ 
 
+## 2. Stack and Queue
+<img width="1005" alt="image" src="https://user-images.githubusercontent.com/13955626/161240261-e4d0da9f-f14a-4ab9-a50f-da153583f361.png">
+
+### Stack支持的操作：
+- push 放进元素
+- pop 拿出顶端元素
+- peek - 查看最顶端元素
+- isEmpty - 查看stack是不是空的
+<img width="614" alt="image" src="https://user-images.githubusercontent.com/13955626/161240698-1ad5c59d-568e-405e-93b3-1ab75ad04be6.png">
+
+### Queue支持的操作
+- enqueue 加入元素
+- dequeue 拿出元素
+- peek 查看最前端元素
+- isFull
+- isEmpty
+
