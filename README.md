@@ -1,10 +1,8 @@
-Table of Contents
-1. Sorting
+# Table of Contents
+1. [Sorting](#Sorting)
 2. Binary Search
 3. Presum
 4. Two Pointer
-
-
 
 ## 1. Sorting
 ### 1. Quick Sort
