@@ -2,7 +2,7 @@
 1. [Sorting](#Sorting)
 2. [Binary Search](#BinarySearch)
 3. [Presum](#Presum)
-4. [Two Pointers](#Two Pointers)
+4. [Two Pointers](#TwoPointers)
 
 ## Sorting <a name="Sorting"></a>
 ### 1.1 Quick Sort
@@ -135,7 +135,7 @@ for i in range(q):
 
 
 
-## Presum/差分
+## Presum/差分 <a name="Presum"></a>
 
 差分实质上就是前缀和的逆运算，主要解决连续多次在部分区间增加某个值 c 之后，求更新之后的数组。
 
@@ -280,7 +280,7 @@ follow up
 leetcode 1109: https://leetcode-cn.com/problems/corporate-flight-bookings/
 leetcode 2132: https://leetcode-cn.com/problems/stamping-the-grid/
 
-## Two Pointer
+## 4.Two Pointer <a name="TwoPointers"></a>
 
 ```python
 n=int(input()) # 输入n和整个序列
