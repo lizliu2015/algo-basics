@@ -4,7 +4,7 @@
 3. [Presum](#Presum)
 4. [Two Pointers](#TwoPointers)
 
-## Sorting <a name="Sorting"></a>
+## 1. Sorting <a name="Sorting"></a>
 ### 1.1 Quick Sort
 ```python
 def quicksort(nums, start, end):
@@ -66,7 +66,7 @@ def merge_sort(list1):
         j += 1
 ```
 
-## Binary Search <a name="BinarySearch"></a>
+## 2. Binary Search <a name="BinarySearch"></a>
 综合使用课上所讲的两种二分模板；
 1. 找左边的最后一个：
 定义性质: 左边元素满足<=target , 结果是查找范围的右边界;
@@ -135,7 +135,7 @@ for i in range(q):
 
 
 
-## Presum/差分 <a name="Presum"></a>
+## 3. Presum/差分 <a name="Presum"></a>
 
 差分实质上就是前缀和的逆运算，主要解决连续多次在部分区间增加某个值 c 之后，求更新之后的数组。
 
