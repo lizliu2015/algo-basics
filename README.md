@@ -1,8 +1,8 @@
 # Table of Contents
-1. [Sorting](#1. Sorting)
-2. [Binary Search](#2. Binary Search)
-3. [Presum](#3. Presum)
-4. [Two Pointers](4. Two Pointers)
+1. [Sorting](#Sorting)
+2. [Binary Search](#Binary Search)
+3. [Presum](#Presum)
+4. [Two Pointers](#Two Pointers)
 
 ## 1. Sorting
 ### 1.1 Quick Sort
