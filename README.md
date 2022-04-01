@@ -309,7 +309,6 @@ practice:
 ## 1. Linked List
 <img width="1035" alt="image" src="https://user-images.githubusercontent.com/13955626/161233738-64e93994-bfaf-4536-b8f2-de91f8c23030.png">
 
-### 单链表
 <img width="683" alt="image" src="https://user-images.githubusercontent.com/13955626/161224094-e8d37a8f-b49c-4ecf-9034-4858efe16f5f.png">
 declaire few elements:
 head: index of linked list's head
@@ -317,17 +316,17 @@ e[i]: value of node i
 ne[i]: the pointer of node i
 idx: store which node has been used
 
-Insert步骤：
+### 1.1 Insert步骤：
 1. 把新的node指向下一个node
 3. 把上一个node指向新的node
 <img width="758" alt="image" src="https://user-images.githubusercontent.com/13955626/161224293-b823d339-690b-4105-a68b-fc7987c2391b.png">
 
-Delete步骤：
+### 1.2 Delete步骤：
 1. 把上一个node指向下一个node
 3. 把当前node指向null
 <img width="765" alt="image" src="https://user-images.githubusercontent.com/13955626/161224506-6cd24e34-447f-47e1-9291-3d959ddca861.png">
 
-Reverse步骤：
+### 1.3 Reverse步骤：
 1. 从最后一个node开始，把每一个node都指向前一个node
 2. 把第一个node指向null
 3. 把head指向原来的最后一个node
@@ -337,15 +336,15 @@ Reverse步骤：
 1. LC21: https://leetcode.com/problems/merge-two-sorted-lists/
 2. LC46: https://leetcode.com/problems/lru-cache/
 
-Linked List和Two Pointer结合：
+### Linked List和Two Pointer结合：
 
-Linked List 找中间节点：
+### 1.4 Linked List 找中间节点：
 两个指针同向而行，一个每次前进两个节点，一个每次前进一个节点，当第二个指针出界的时候，第一个指针就停留在中间节点。
 
-Linked List找倒数第k个节点：
+### 1.5 Linked List找倒数第k个节点：
 两个指针先隔开k个位置，每次相同速度向前进，直到第一个指针出界，第二个指针就停在倒数第k个节点
 
-Linked List Recursion
+### 1.6 Linked List Recursion
 一般用bottom up的方式， 3 steps
 1. subproblem result
 2. do sth in current level
