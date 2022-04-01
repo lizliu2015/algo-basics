@@ -397,14 +397,15 @@ idx: store which node has been used
 2. 代码实现
 
 `python
-# 读取数组
+
+#读取数组
 n = int(input())
 nums = list(map(int, input().split()))
 
-# 单调栈
+#单调栈
 deq = []
 
-# 开始处理数据
+#开始处理数据
 for i in range(len(nums)):
 
     # 从单调栈中弹出不满足升序的数
@@ -459,9 +460,17 @@ for i in range(len(nums)):
 
 # 搜索与图论
 ## 深度优先搜索 DFS
+数据结构：stack
+空间： O(h)
+最短性：不具有
+
 
 
 
 ## 宽度优先搜索 BFS
+数据结构：queue
+空间： O(2^h)
+最短性：具有“最短路”
+
 
 
