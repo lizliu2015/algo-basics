@@ -299,4 +299,7 @@ for i in range(n):
 
 print(res)
 ```
+practice:
+LC344:https://leetcode.com/problems/reverse-string/
+
 
