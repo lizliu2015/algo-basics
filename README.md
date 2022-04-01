@@ -308,3 +308,25 @@ practice:
 # Data Structure
 ## 1. Linked List
 
+### 单链表
+<img width="683" alt="image" src="https://user-images.githubusercontent.com/13955626/161224094-e8d37a8f-b49c-4ecf-9034-4858efe16f5f.png">
+declaire few elements:
+head: index of linked list's head
+e[i]: value of node i
+ne[i]: the pointer of node i
+idx: store which node has been used
+
+Insert步骤：
+1. 把新的node指向下一个node
+2. 把上一个node指向新的node
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/13955626/161224293-b823d339-690b-4105-a68b-fc7987c2391b.png">
+Delete步骤：
+1. 把上一个node指向下一个node
+2. 把当前node指向null
+<img width="765" alt="image" src="https://user-images.githubusercontent.com/13955626/161224506-6cd24e34-447f-47e1-9291-3d959ddca861.png">
+Reverse步骤：
+1. 从最后一个node开始，把每一个node都指向前一个node
+2. 把第一个node指向null
+3. 把head指向原来的最后一个node
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/13955626/161228794-c17fc089-ac30-4fc1-a784-1f322cbd5460.png">
+
