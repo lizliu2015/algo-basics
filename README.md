@@ -72,7 +72,6 @@ def merge_sort(list1):
 1. python除法不会自动向下取整, 需要手动int();
 2. 二分法一定会输出结果, 但这个结果不一定是满足要求的, 需要额外判断;
 
-
 ```python
 # 数组共有n个数, 查询q次
 n, q = map(int, input().split())
@@ -125,6 +124,7 @@ for i in range(q):
 ```
 备注: 二分练习题：leetcode_704_二分查找
 https://leetcode.com/problems/random-pick-with-weight/
+https://leetcode.com/problems/find-peak-element/
 
 
 
