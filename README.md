@@ -1,6 +1,6 @@
 # Table of Contents
 1. [Sorting](#Sorting)
-2. [Binary Search](#Binary Search)
+2. [Binary Search](# Binary Search)
 3. [Presum](#Presum)
 4. [Two Pointers](#Two Pointers)
 
