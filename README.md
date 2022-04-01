@@ -122,9 +122,11 @@ for i in range(q):
     else:
         print(-1, -1)
 ```
-备注: 二分练习题：leetcode_704_二分查找
-https://leetcode.com/problems/random-pick-with-weight/
-https://leetcode.com/problems/find-peak-element/
+备注: 
+二分练习题：
+1. leetcode_704_二分查找 https://leetcode.com/problems/binary-search/
+2. https://leetcode.com/problems/random-pick-with-weight/
+3. https://leetcode.com/problems/find-peak-element/
 
 
 
