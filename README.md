@@ -4,7 +4,7 @@
 3. [Presum](#Presum)
 4. [Two Pointers](#Two Pointers)
 
-## 1. Sorting
+## Sorting
 ### 1.1 Quick Sort
 ```python
 def quicksort(nums, start, end):
@@ -66,7 +66,7 @@ def merge_sort(list1):
         j += 1
 ```
 
-## 2. Binary Search
+## Binary Search
 综合使用课上所讲的两种二分模板；
 1. 找左边的最后一个：
 定义性质: 左边元素满足<=target , 结果是查找范围的右边界;
@@ -135,7 +135,7 @@ for i in range(q):
 
 
 
-## 3. Presum/差分
+## Presum/差分
 
 差分实质上就是前缀和的逆运算，主要解决连续多次在部分区间增加某个值 c 之后，求更新之后的数组。
 
@@ -280,7 +280,7 @@ follow up
 leetcode 1109: https://leetcode-cn.com/problems/corporate-flight-bookings/
 leetcode 2132: https://leetcode-cn.com/problems/stamping-the-grid/
 
-## 4. Two Pointer
+## Two Pointer
 
 ```python
 n=int(input()) # 输入n和整个序列
