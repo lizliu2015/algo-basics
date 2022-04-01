@@ -277,8 +277,8 @@ if __name__ == "__main__":
 ```
 
 follow up 
-leetcode 1109: https://leetcode-cn.com/problems/corporate-flight-bookings/
-leetcode 2132: https://leetcode-cn.com/problems/stamping-the-grid/
+1. leetcode 1109: https://leetcode-cn.com/problems/corporate-flight-bookings/
+2. leetcode 2132: https://leetcode-cn.com/problems/stamping-the-grid/
 
 ## 4.Two Pointer <a name="TwoPointers"></a>
 
@@ -300,7 +300,7 @@ for i in range(n):
 print(res)
 ```
 practice:
-LC344:https://leetcode.com/problems/reverse-string/
-LC680:https://leetcode.com/problems/valid-palindrome-ii/
+1. LC344:https://leetcode.com/problems/reverse-string/
+2. LC680:https://leetcode.com/problems/valid-palindrome-ii/
 
 
