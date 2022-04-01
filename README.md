@@ -4,7 +4,7 @@
 3. Presum
 4. Two Pointer
 
-## 1. Sorting
+## Sorting
 ### 1. Quick Sort
 ```python
 def quicksort(nums, start, end):
