@@ -616,6 +616,8 @@ https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
 https://leetcode.com/problems/the-maze/
 
 模版
+![image](https://user-images.githubusercontent.com/13955626/161369779-30a388d6-b6ac-4890-a29c-b3ba7eb99ee1.png)
+
 ```python
 """
 基本思想:
