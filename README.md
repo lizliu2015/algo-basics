@@ -608,11 +608,17 @@ dfs(0)
 - 空间： O(2^h)
 - 最短性：具有“最短路” （当所有边权重都一样的时候）
 
-应用1  
+应用1 层序遍历
 
 https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
 
-应用2
+
+BFS 的层序遍历应用就是本题了：
+
+LeetCode 102. Binary Tree Level Order Traversal 二叉树的层序遍历（Medium）
+
+
+应用2 最短路径
 https://leetcode.com/problems/the-maze/
 
 模版
