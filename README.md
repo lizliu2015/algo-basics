@@ -396,7 +396,7 @@ idx: store which node has been used
 给定一个序列，求序列中的每一个数左边或右边第一个比他大或比他小的数在什么地方；
 2. 代码实现
 
-`python
+``` python
 
 #读取数组
 n = int(input())
@@ -420,7 +420,7 @@ for i in range(len(nums)):
 
     # 将当前数据加入单调栈中(当前数据一定能够保证单调栈升序)
     deq.append(nums[i])
-` 
+```
 3. 相关练习题
 
 单调栈：leetcode_42_接雨水 (注: 在很多资料中都会把这个题列为单调栈的题目, 但是我觉得用其他的方法会更清晰一些)
@@ -464,7 +464,7 @@ for i in range(len(nums)):
 空间： O(h)
 最短性：不具有
 
-` python
+``` python
 
 def dfs(u):
 
@@ -487,7 +487,7 @@ if __name__ == '__main__':
     n = int(input())
 
     dfs(0)
-` 
+``` 
 练习题：
 1. LC51: https://leetcode.com/problems/n-queens/solution/
 
