@@ -488,8 +488,8 @@ if __name__ == '__main__':
 
     dfs(0)
 ` 
-
-
+练习题：
+1. LC51: https://leetcode.com/problems/n-queens/solution/
 
 
 ## 宽度优先搜索 BFS
