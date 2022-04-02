@@ -668,4 +668,12 @@ bfs()
 
 ```
 
+### 双向BFS优化
+传统的BFS是从起点开始向四周进行扩散，而双向BFS则是从起点和终点同时进行扩散，直到两者相交在一起结束。
+虽然理论上讲两者的最坏时间复杂度都是O（N），但实际在运行时，确实双向BFS的性能会更好一点，这是为什么那？？
+我们可以借助下面两张图辅助进行理解。简单来看的话，双向 BFS 还是遵循 BFS 算法框架的，只是不再使用队列，而是使用 HashSet 方便快速判断两个集合是否有交集。
+![image](https://user-images.githubusercontent.com/13955626/161369836-535a5a1b-3edc-409f-8754-e35013280eb7.png)
+
+![image](https://user-images.githubusercontent.com/13955626/161369833-1c24aa97-9dfe-418d-905e-b7732febe252.png)
+
 
