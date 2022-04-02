@@ -1,21 +1,21 @@
 # Table of Content
 1. [Algo Basics](#Algo Basics)
-    1.1 [Sorting](#Sorting)  
-    1.2 [Binary Search](#BinarySearch)
-    1.3 [Presum](#Presum)
-    1.4 [Two Pointers](#TwoPointers)
+    1. [Sorting](#Sorting)  
+    2. [Binary Search](#BinarySearch)
+    3. [Presum](#Presum)
+    4. [Two Pointers](#TwoPointers)
 2. [Data Structure](#DataStructure)
-    2.1
-    2.2
-    2.3
+    1.
+    2.
+    3.
 3. [Search and Graph Theory](#搜索与图论)
-    3.1
-    3.2
-    3.3
-    3.4
+    1.
+    2.
+    3.
+    4.
 4. Dynamic Programming
-    4.1
-    4.2
+    1.
+    2.
 
 # 1. Algo Basics <a name="Algo Basics"></a>
 ## 1.1 Sorting <a name="Sorting"></a>
