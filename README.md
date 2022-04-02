@@ -464,6 +464,30 @@ for i in range(len(nums)):
 空间： O(h)
 最短性：不具有
 
+`python
+def dfs(u):
+
+    if u == n:    #当所有坑位被占满 那么输出储存的路径
+        for i in range(0,n):
+            print(p[i],end=" ")
+        print('')
+
+    for i in range(1,n+1):
+        if not st[i]: #确认数字状态，是否已经被使用 如果没有被占执行下面操作
+            p[u] = i  #在坑位上填上次数字
+            st[i] = True #标注数字状态，已经被使用
+            dfs(u+1) #进入下一层
+            st[i] = False #回溯恢复数字状态
+
+if __name__ == '__main__':
+    N = 10
+    p, st= [0] * N,[False] * N
+
+    n = int(input())
+
+    dfs(0)
+` 
+
 
 
 
