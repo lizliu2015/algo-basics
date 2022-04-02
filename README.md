@@ -1,11 +1,25 @@
-# Table of Contents
-1. [Sorting](#Sorting)
-2. [Binary Search](#BinarySearch)
-3. [Presum](#Presum)
-4. [Two Pointers](#TwoPointers)
+# Table of Content
+1. [Algo Basics](#Algo Basics)
+    1.1 [Sorting](#Sorting)  
+    1.2 [Binary Search](#BinarySearch)
+    1.3 [Presum](#Presum)
+    1.4 [Two Pointers](#TwoPointers)
+2. [Data Structure](#DataStructure)
+    2.1
+    2.2
+    2.3
+3. [Search and Graph Theory](#搜索与图论)
+    3.1
+    3.2
+    3.3
+    3.4
+4. Dynamic Programming
+    4.1
+    4.2
 
-## 1. Sorting <a name="Sorting"></a>
-### 1.1 Quick Sort
+# 1. Algo Basics <a name="Algo Basics"></a>
+## 1.1 Sorting <a name="Sorting"></a>
+### 1.1.1 Quick Sort
 ```python
 def quicksort(nums, start, end):
     if start >= end :
@@ -29,7 +43,7 @@ follow up :
 kth largest number (quick select)
 find median sort arrays( based on kth, 2 pointers, divide and conquer )
 
-### 1.2 Merge Sort
+### 1.1.2 Merge Sort
 (归并排序) O(nlog(n)
 
 自底向上的方法，先划分为两个子区间，然后分别对两个子区间排序，再将排序好的子区间进行合并。
@@ -66,7 +80,7 @@ def merge_sort(list1):
         j += 1
 ```
 
-## 2. Binary Search <a name="BinarySearch"></a>
+## 1.2 Binary Search <a name="BinarySearch"></a>
 综合使用课上所讲的两种二分模板；
 1. 找左边的最后一个：
 定义性质: 左边元素满足<=target , 结果是查找范围的右边界;
@@ -305,7 +319,7 @@ practice:
 1. LC344:https://leetcode.com/problems/reverse-string/
 2. LC680:https://leetcode.com/problems/valid-palindrome-ii/
 
-# Data Structure
+# 2. Data Structure  <a name="DataStructure"></a>
 ## 1. Linked List
 <img width="1035" alt="image" src="https://user-images.githubusercontent.com/13955626/161233738-64e93994-bfaf-4536-b8f2-de91f8c23030.png">
 
@@ -458,7 +472,7 @@ for i in range(len(nums)):
 
 
 
-# 搜索与图论
+# 3. 搜索与图论  <a name="搜索与图论"></a>
 ## 深度优先搜索 DFS
 - 数据结构：stack
 - 空间： O(h)
