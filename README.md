@@ -473,7 +473,9 @@ for i in range(len(nums)):
 
 
 # 3. 搜索与图论  <a name="搜索与图论"></a>
-## 深度优先搜索 DFS
+
+
+## 1. 深度优先搜索 DFS
 - 数据结构：stack
 - 空间： O(h)
 - 最短性：不具有
@@ -513,10 +515,6 @@ for循环也是一种选择的体现，比如说一个顶点有很多条分支�
 
     在for循环中的dfs通常用于图的遍历。
     直接dfs的情况通常在于非图的遍历。
------------------------------------
-©著作权归作者所有：来自51CTO博客作者lawsonabs的原创作品，请联系作者获取转载授权，否则将追究法律责任
-dfs刷题模板总结
-https://blog.51cto.com/lawsonabs/3055202
 
 ### 优化方法
 记忆化搜索就是：将一次搜索的结果放在一个容器中存储下来。等到下次再搜索到这个点时，就应该直接返回之前搜索的值，而不是再往下搜索了。
@@ -575,7 +573,7 @@ if __name__ == '__main__':
 
     dfs(0)
 ``` 
-二维：
+二维 (+减枝)：N-Queens
 ```python
 n = int(input())
 dg, ndg, col_unused = [True] * (n<<1) , [True] * (n<<1), [True] * n
@@ -608,7 +606,58 @@ dfs(0)
 ## 宽度优先搜索 BFS
 - 数据结构：queue
 - 空间： O(2^h)
-- 最短性：具有“最短路”
+- 最短性：具有“最短路” （当所有边权重都一样的时候）
 
+应用1  
+
+https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
+
+应用2
+https://leetcode.com/problems/the-maze/
+
+模版
+```python
+"""
+基本思想:
+    bfs模板：
+    1. 初始化队列
+    2. while queue不为空
+        3. 队顶元素出队
+        4. 遍历，满足条件的入队
+
+"""
+def bfs():
+    d[0][0] = 0
+    # 1. 初始化队列
+    queue = [(0,0)]    
+    dx = [-1, 0 , 1, 0]    # !!!网格遍历的技巧：左，上，右，下
+    dy = [0, 1, 0, -1]
+
+    # 2. while queue不为空 
+    while queue:
+        # 3. 队顶元素出队
+        x,y = queue.pop(0)
+        # 4. 遍历，满足条件的入队
+        for i in range(4):
+            a = x+dx[i]
+            b = y+dy[i]
+            if a>=0 and a<n and b>=0 and b<m and g[a][b]==0 and d[a][b]==-1:
+                queue.append((a,b))
+                d[a][b] = d[x][y]+1
+    print(d[n-1][m-1])
+
+# 1. 输入示例
+n, m = map(int, input().split())
+g = [[-1 for i in range(m)] for j in range(n)]    # 存储输入的矩阵
+
+for i in range(n):
+    in_li = list(map(int, input().split()))
+    for j in range(m):
+        g[i][j] = in_li[j]
+# 2. ！！！初始化状态
+d = [[-1 for i in range(m)] for j in range(n)]    # 存储点到起点(0,0)的距离,-1表示未被访问过
+bfs()
+
+```
 
 
