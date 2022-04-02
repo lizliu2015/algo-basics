@@ -464,7 +464,8 @@ for i in range(len(nums)):
 空间： O(h)
 最短性：不具有
 
-`python
+` python
+
 def dfs(u):
 
     if u == n:    #当所有坑位被占满 那么输出储存的路径
