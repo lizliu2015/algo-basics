@@ -624,6 +624,7 @@ https://leetcode.com/problems/the-maze/
     2. while queue不为空
         3. 队顶元素出队
         4. 遍历，满足条件的入队
+        5. 记录已经使用过的元素
 
 """
 def bfs():
@@ -632,7 +633,8 @@ def bfs():
     queue = [(0,0)]    
     dx = [-1, 0 , 1, 0]    # !!!网格遍历的技巧：左，上，右，下
     dy = [0, 1, 0, -1]
-
+    visited = set()
+    
     # 2. while queue不为空 
     while queue:
         # 3. 队顶元素出队
@@ -644,7 +646,11 @@ def bfs():
             if a>=0 and a<n and b>=0 and b<m and g[a][b]==0 and d[a][b]==-1:
                 queue.append((a,b))
                 d[a][b] = d[x][y]+1
-    print(d[n-1][m-1])
+    
+    # Check if the new starting position has been visited
+                if not visited[new_x][new_y]:
+                    q.append((new_x, new_y))
+                    visited[new_x][new_y] = True
 
 # 1. 输入示例
 n, m = map(int, input().split())
