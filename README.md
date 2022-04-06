@@ -876,4 +876,20 @@ class Solution:
                     break
         return mst_cost```
 
+### topological order
+
+![image](https://user-images.githubusercontent.com/13955626/162076233-c00b0d0c-8679-433e-a5c0-2743e817115d.png)
+
+207. Course Schedule (Medium) 判断课程排序的可能性
+https://leetcode.com/problems/course-schedule/
+
+210. Course Schedule II (Medium) 输出可行的课程排序
+https://leetcode.com/problems/course-schedule-ii/
+
+630. Course Schedule III (Hard) 是DP的题目 不是拓扑排序！！！
+https://leetcode.com/problems/course-schedule-iii/
+
+1203. Sort Items by Groups Respecting Dependencies (Hard) 拓扑排序+附加条件
+https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/
+
 
