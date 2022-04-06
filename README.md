@@ -794,4 +794,26 @@ bfs()
 ### 宽度
 
 
+### 最小生成树
+- 保留无向图的所有点和一些边
+- 生成一个联通的， 没有回路的生成树
+- 权重最小
+
+![image](https://user-images.githubusercontent.com/13955626/161897489-41f4f2db-26eb-4cf2-95d7-a4a1edcd5cd4.png)
+
+### prim算法
+![image](https://user-images.githubusercontent.com/13955626/161897813-5ccfddc4-e6d8-4a5f-8c99-60d3c462b350.png)
+
+### kruskal 算法
+
+![image](https://user-images.githubusercontent.com/13955626/161898898-368b8d57-7fde-43c9-afb6-7895f81c52ef.png)
+ 
+ ![image](https://user-images.githubusercontent.com/13955626/161898987-277d22a6-b6c8-4ce8-aef5-5f0ee2e4aa49.png)
+
+![image](https://user-images.githubusercontent.com/13955626/161899033-d35ccfa6-e183-4829-aa2d-7744edb463c9.png)
+
+![image](https://user-images.githubusercontent.com/13955626/161899117-5e34ece7-72fc-4e4f-b3ba-7e523e6353b0.png)
+
+
+
 
