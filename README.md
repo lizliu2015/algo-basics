@@ -529,6 +529,33 @@ for i in range(len(nums)):
 
 
 ## 并查集 Union Find
+n,m=map(int,input().split())
+p=[x for x in range(n+1)]
+size=[1]*(n+1) #初始化
+
+def find(x):
+    if p[x]!=x:
+        p[x]=find(p[x])
+    return p[x] #与836一样，找到祖宗节点，路径压缩
+
+for i in range(m):
+    op,*px=input().split()
+    if op=="C": #在合并的同时更新维护size集合
+        a,b=int(px[0]),int(px[1])
+        if find(b)==find(a):
+            continue
+        size[find(a)]+=size[find(b)] #因为是让点b的祖宗节点插入a的祖宗节点，因此在这里需要维护a的祖宗节点（最终祖宗节点）
+        p[find(b)]=find(a)
+
+    elif op=="Q1":
+        a,b=int(px[0]),int(px[1])
+        if find(a)==find(b):
+            print("Yes")
+        else:
+            print("No")
+    else:
+        a=int(px[0])
+        print(size[find(a)])
 
 
 
